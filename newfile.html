@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <style media="screen">
+  body {
+    background: lavender;
+  }
+  h1 {
+  color: maroon;
+  font-family: garamond;
+  font-size: 70px;
+  text-align:center;
+  }
+  h2 {
+    color: turquoise;
+  }
+  .demo {
+    color: white;
+  }
+
+  </style>
+  </head>
+  <body>
+    <h1>Welcome to My Second Page!</h1>
+    <h2>Click on the "Try It" button to find even more about your sign:</h2>
+    <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+    <script type="text/javascript">
+    function myFunction() {
+    var text;
+    var favDrink = prompt("What's your zodiac sign", "Leo");
+    switch(favDrink) {
+        case "pisces":
+        text = "How cool! I'm a Pisces too. This must mean that you were born between February 19 - March 20. A person with a pisces sun is generally very intuitive and is extremely giving and generous.";
+        break;
+        case "aries":
+        text = "How nice! My best friend's an Aries. Your birthday must fall between March 21 - April 19. Aries suns are very courageous determined and confidentand are always up for a chalenge. "
+        break;
+        case "taurus":
+        text = "Woah, super cool! So your birthday falls between April 20 - May 20 huh. People with your sun sign are practical and well-grounded you're probably also an amazing cook. Yum.";
+        break;
+        case "gemini":
+        text = "Really! My mom's a gemini. You must've been born between May 21 - June 20. Gemini's though generally not liked are actually gentle and affectionate people and tend to be extroverted.";
+        break;
+        case "cancer":
+        text = "Yay a fellow water sign. I'm guessing your birthday falls June 21 - July 22. Cancerians are higly imaginative and loyal making great partners. You're a huge sweetheart.";
+        break;
+        case "leo":
+        text = "Ohh. So cool. Leo's are born between between July 23 - August 22. Leo's tend to be very creative and in your face making great entertainers. Grace is a leo so you're Grace.";
+        break;
+        case "virgo":
+        text = "Wow! Super cool. Your birthday must be between August 23 - Septmber 22. Virgo's generally are analytical, hardworking and love a good book. What a scholar. ";
+        break;
+        case "libra":
+        text = "Wow! Super cool. Your birthday must be between September 23 - October 22. Libra's generally are diplomatic and well balanced. You have your stuff under control. Your name is Chad";
+        break;
+        case "scorpio":
+        text = "Yay a fellow water sign. I'm guessing your birthday falls between October 23 - November 21. Scorpio's are higly resourceful, passionate and pretty mysterious. You make a great friend.";
+        break;
+        case "sagittarius":
+        text = "Ooo super cool. Your birthday probably falls between November 22 - December 21. Sags are Idealistic and have a great sense of humour and love freedom and traveling. Such a free spirit. ";
+        break;
+        case "capricorn":
+        text = "Woah, all my fake friends were caps! So your birthday falls between December 22 - January 19 huh. People with your sun sign are responsible and disciplined you'd probably be an amazing business person.";
+        break;
+        case "aquarius":
+        text = "Woah, my crush is an aquarius! So your birthday must be between January 20 - February 18. Aquarians are progressive and humnitarians. You'll probably change the world someday. Congrats.";
+        break;
+        default:
+        text = "I have never heard of that one..";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+
+    </script>
+    <a href="file.html">click here to go back to the main page</a>
+  </body>
+</html>
